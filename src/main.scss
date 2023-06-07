@@ -6,18 +6,41 @@
 	box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+	width: 13px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #263238;
+	border: 3px solid #fff;
+}
+
+body {
+	scroll-behavior: smooth;
+}
+
 #root {
 	max-width: 1440px;
 	width: 100%;
 	height: 100vh;
+	overflow: auto;
 	margin: auto;
 	background-color: #EEEEEE;
 	font-family: 'Poppins', sans-serif;
-	padding: 0 130px;
+	padding: 0 100px;
 }
 
 @media(max-width: 992px) {
 	#root {
-		padding: 30px;
+		padding: 0 30px;
+	}
+}
+
+@media(max-width: 567px) {
+	#root {
+		padding: 0 16px;
 	}
 }

@@ -2,27 +2,36 @@
    width: 100%;
    display: flex;
    align-items: center;
-   padding: 70px 0;
+   height: 120px;
    justify-content: space-between;
+   align-items: center;
    user-select: none;
 
    .nav {
       display: flex;
-      gap: 25px;
-      font-size: 16px;
+      gap: 35px;
+      font-size: 18px;
 
       .menu {
          cursor: pointer;
          transition: all 0.2s;
+         color: #263238;
+         text-decoration: none;
 
          &:hover {
             color: #00000098;
+            transform: scale(1.05);
          }
+      }
+
+      .close-btn {
+         font-size: 30px;
+         display: none;
       }
    }
 
    .talk-btn {
-      padding: 17px 57px;
+      padding: 15px 40px;
       border: 2px solid #263238;
       border-radius: 5px;
       font-size: 22px;
@@ -44,7 +53,7 @@
 
 @media(max-width: 992px) {
    .header {
-      padding: 30px 0;
+      height: 100px;
 
       .nav {
          font-size: 14px;
@@ -58,7 +67,7 @@
 
 @media(max-width: 767px) {
    .header {
-      padding: 30px 0;
+      height: 80px;
 
       .nav,
       .talk-btn {
@@ -91,10 +100,19 @@
 
       .nav.show {
          display: flex;
+         height: 400px;
+         background-color: red;
+         position: absolute;
       }
 
       .menu-icon {
          display: flex;
       }
+   }
+}
+
+@media(max-width: 500px) {
+   .header {
+      height: 60px;
    }
 }

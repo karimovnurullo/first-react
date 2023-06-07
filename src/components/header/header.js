@@ -1,6 +1,14 @@
-import React from "react";
+import React, { createRef } from "react";
 import "./header.scss";
 import logo from "./logo.png";
+
+function menu(text, id) {
+  return (
+    <a href={`#${id}`} className="menu">
+      {text}
+    </a>
+  );
+}
 
 export default class Header extends React.Component {
   render() {
@@ -8,11 +16,11 @@ export default class Header extends React.Component {
       <header className="header">
         <img src={logo} alt="" />
         <nav className="nav">
-          <div className="menu">Home</div>
-          <div className="menu">Skills</div>
-          <div className="menu">About us</div>
-          <div className="menu">Pricing</div>
-          <div className="menu">Contacts</div>
+          {menu("Home", "home")}
+          {menu("Skills", "skills")}
+          {menu("About Us", "about")}
+          {menu("Pricing", "pricing")}
+          {menu("Contacts", "contacts")}
           <div className="close-btn">
             <i className="fa-solid fa-xmark"></i>
           </div>
