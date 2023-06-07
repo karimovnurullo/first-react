@@ -1,7 +1,7 @@
 .skills {
    display: flex;
    flex-direction: column;
-   padding: 50px 0;
+   padding: 80px 0 50px;
    gap: 50px;
 
    &-title {
@@ -17,21 +17,68 @@
       height: fit-content;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      background-color: green;
+      gap: 18px;
       margin: auto;
 
       .item {
-         width: 400px;
+         position: relative;
          width: 100%;
-         background-color: red;
+         background-color: #F5F5F5;
          margin: auto;
+         border-radius: 10px;
+
+         .item-content {
+            padding: 30px;
+
+            h3 {
+               font-size: 30px;
+               line-height: 80px;
+               color: #263238;
+            }
+
+            p {
+               font-size: 16px;
+               line-height: 24px;
+               color: #8F95A5;
+            }
+
+            .learn-more {
+               padding: 12px 60px;
+               font-size: 18px;
+               line-height: 27px;
+               color: #FFFFFF;
+               background: #263238;
+               border-radius: 5px;
+               width: fit-content;
+               margin-top: 30px;
+               transition: all 0.2s;
+               cursor: pointer;
+
+               &:hover {
+                  transform: scale(1.03);
+               }
+            }
+         }
       }
 
       .item:nth-child(1) {
          grid-column: span 1;
          grid-row: span 3;
          height: 100%;
+         width: 100%;
+      }
+
+      .item:nth-child(2),
+      .item:nth-child(3) {
+         .item-content {
+            margin-top: 200px;
+         }
+
+         img {
+            position: absolute;
+            top: 0;
+            right: 0;
+         }
       }
 
       .item:nth-child(2),
@@ -45,29 +92,9 @@
          grid-column: span 2;
          grid-row: span 1;
          height: 300px;
+         display: flex;
       }
 
-
-      // display: flex;
-      // gap: 20px;
-      // background-color: rgb(165, 165, 165);
-
-      // &-left {
-      //    width: 350px;
-      //    height: 500px;
-      //    background-color: red;
-      // }
-
-      // &-right {
-      //    display: flex;
-      //    gap: 10px;
-
-      //    div {
-      //       width: 350px;
-      //       height: 500px;
-      //       background-color: red;
-      //    }
-      // }
    }
 }
 

@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -18,17 +19,13 @@
 	border: 3px solid #fff;
 }
 
-body {
-	scroll-behavior: smooth;
-}
-
 #root {
 	max-width: 1440px;
 	width: 100%;
-	height: 100vh;
-	overflow: auto;
+	// height: 100vh;
+	// overflow: auto;
 	margin: auto;
-	background-color: #EEEEEE;
+	background-color: #fff;
 	font-family: 'Poppins', sans-serif;
 	padding: 0 100px;
 }
