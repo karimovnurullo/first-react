@@ -4,6 +4,7 @@ import Home from "./components/home/home";
 import Skills from "./components/skills/skills";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
+import Pricing from "./components/pricing/pricing";
 export default class App extends React.Component {
   render() {
     return (
@@ -12,6 +13,7 @@ export default class App extends React.Component {
         <Home />
         <Skills />
         <About />
+        <Pricing />
         <Contact />
       </div>
     );
