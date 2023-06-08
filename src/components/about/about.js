@@ -1,10 +1,12 @@
 import React from "react";
 import "./about.scss";
+import img from "./img.png";
 
 export default class About extends React.Component {
   render() {
     return (
       <div className="about" id="about">
+        {/* <h2 className="about-title hidden-title">About Us</h2> */}
         <div className="about-left">
           <h2 className="about-title">About Us</h2>
           <p>
@@ -16,7 +18,7 @@ export default class About extends React.Component {
           <div className="static">
             <div className="item">
               <span>800</span>
-              <p>800</p>
+              <p>Pupils</p>
             </div>
             <div className="item">
               <span>18</span>
@@ -28,7 +30,9 @@ export default class About extends React.Component {
             </div>
           </div>
         </div>
-        <div className="about-right"></div>
+        <div className="about-right">
+          <img src={img} alt="" />
+        </div>
       </div>
     );
   }
