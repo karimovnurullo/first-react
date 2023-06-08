@@ -3,6 +3,7 @@
    height: 600px;
    display: flex;
    gap: 30px;
+   padding: 50px 0;
 
    &-left {
       width: 55%;
@@ -93,7 +94,7 @@
 @media(max-width: 767px) {
    .about {
       flex-direction: column-reverse;
-      margin-top: 350px;
+      margin-top: 300px;
 
       &-left {
          width: 100%;
