@@ -148,7 +148,8 @@
             }
          }
 
-         .item:nth-child(2) {
+         .item:nth-child(2),
+         .item:nth-child(3) {
             img {
                position: static;
             }
@@ -177,6 +178,19 @@
             flex-direction: column-reverse;
          }
 
+      }
+   }
+}
+
+@media(max-width: 567px) {
+   .skills {
+      &-box {
+         .item {
+            .item-content {
+               padding-top: 0;
+               padding: 20px 10px;
+            }
+         }
       }
    }
 }
