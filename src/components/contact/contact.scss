@@ -4,6 +4,7 @@
    height: 500px;
    align-items: center;
    gap: 40px;
+   margin-top: 50px;
 
    .contact-left {
       width: 35%;
@@ -75,10 +76,11 @@
    .contact {
       flex-direction: column;
       text-align: center;
+      height: fit-content;
+      gap: 0;
 
       .contact-left {
          width: 100%;
-
       }
 
       .contact-right {
