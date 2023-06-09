@@ -16,6 +16,9 @@ export default class Header extends React.Component {
       <header className="header">
         <img src={logo} alt="" />
         <nav className="nav">
+          <a href={`#${id}`} className="menu">
+            {text}
+          </a>
           {menu("Home", "home")}
           {menu("Skills", "skills")}
           {menu("About Us", "about")}

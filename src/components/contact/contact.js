@@ -5,7 +5,7 @@ import img from "./img.png";
 export default class Contact extends React.Component {
   render() {
     return (
-      <div className="contact" id="contact">
+      <div className="contact" id="contacts">
         <div className="contact-left">
           <img src={img} alt="" />
         </div>
@@ -16,8 +16,8 @@ export default class Contact extends React.Component {
             learning tips and free resources
           </p>
           <div className="inputs">
-          <input type="email" className="email-input" placeholder="Enter Your E-mail" />
-          <input type="button" className="submit-input" value="Subscribe" />
+            <input type="email" className="email-input" placeholder="Enter Your E-mail" />
+            <input type="button" className="submit-input" value="Subscribe" />
           </div>
         </div>
       </div>
