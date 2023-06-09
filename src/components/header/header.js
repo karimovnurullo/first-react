@@ -14,7 +14,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <header className="header">
-        Logo
+        Logo1
         <img src={logo} alt="" />
         <nav className="nav">
           <a href={`#${id}`} className="menu">
